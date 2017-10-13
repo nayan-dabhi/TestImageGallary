@@ -1,0 +1,18 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Selected Image</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+
+  <ion-content>
+    <ion-item>
+      <img ng-src="{{selectedImage}}" height="150" width="150"/>
+    </ion-item>
+
+    <label class="item">
+      <button class="button button-block button-positive" on-tap="setWallpaper()">Set as wallpaper</button>
+    </label>
+  </ion-content>
+</ion-modal-view>

@@ -1,0 +1,9 @@
+<ion-view view-title="Home">
+  <ion-content>
+    <ion-list ng-if="images != null && images.length > 0">
+      <ion-item ng-repeat="image in images">
+        <img ng-src="{{image.src}}" height="150" width="150" on-tap="openImagePreview('{{image.src}}')"/>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
